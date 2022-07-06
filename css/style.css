@@ -1,118 +1,91 @@
-/* BEGIN (write your solution here) */
-@font-face {
-  font-family: "Cormorant Bold";
-  src: url("../assets/fonts/Cormorant-Bold.ttf");
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  font: 18px/1.5 sans-serif;
+
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
-@font-face {
-  font-family: "Cormorant Regular";
-  src: url("../assets/fonts/Cormorant-Regular.ttf");
+.form {
+  box-sizing: border-box;
+  width: 500px;
+  padding: 30px 80px;
+
+  background: #fff;
+
+  border-radius: 7px;
+}
+
+/* BEGIN (write your solution here) */
+.form-input * {
+  display: block;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 50px;
+
+  padding: 10px 20px;
+
+  border: 1px solid #e2e2e2;
+}
+
+.form-input textarea {
+  height: 200px;
+
+  resize: none;
 }
 
 /* END */
 
-body {
-  width: 790px;
-  margin: 0 auto;
-  padding: 50px 0 100px;
+.btn {
+  padding: 15px 30px;
 
-  /* BEGIN (write your solution here) */
-  font-size: 16px;
-  font-family: sans-serif;
-  line-height: 1.5;
-
-  /* END */
-
-  background-color: #ebebeb;
-}
-
-figure {
-  margin: 50px 0 0;
-}
-
-figcaption {
-  font-size: 12px;
-}
-
-img {
-  width: 100%;
-}
-
-.logo {
-  margin-bottom: 30px;
-
-  /* BEGIN (write your solution here) */
-  color: #333;
-  font: 30px/normal "Cormorant regular", serif;
-
-  /* END */
-  letter-spacing: 15px;
-  text-transform: uppercase;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
-.nav > * {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.nav a {
-  /* BEGIN (write your solution here) */
-  color: #616161;
   font-weight: bold;
 
-  /* END */
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
+  border: none;
 
-  text-decoration: none;
+  cursor: pointer;
 }
 
-.interview {
-  /* BEGIN (write your solution here) */
-  color: #333;
-  font: 18px/1.5 serif;
+.btn-green {
+  color: #fff;
 
-  /* END */
+  background: #4caf50;
 }
 
-.interview-header {
-  /* BEGIN (write your solution here) */
-  font: bold 50px/1.2 "Cormorant Bold", serif;
+.block-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-  /* END */
+  transform: translate(-50%, -50%);
 }
 
-.interview-description {
-  /* BEGIN (write your solution here) */
-  color: #686868;
-  font-family: serif;
-
-  /* END */
+.mb-1 {
+  margin-bottom: 1em;
 }
 
-.interview-footer {
-  /* BEGIN (write your solution here) */
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: right;
-
-  /* END */
+.mb-2 {
+  margin-bottom: 1.5em;
 }
 
-.interview-text {
-  /* BEGIN (write your solution here) */
-  font-size: 20px;
-  line-height: 1.75;
-  text-align: justify;
+.small {
+  font-size: 14px;
+}
 
-  /* END */
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
 }
